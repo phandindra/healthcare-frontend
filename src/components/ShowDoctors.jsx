@@ -20,6 +20,8 @@ const ShowDoctors = () => {
     try {
      console.log("BASE_URL =", import.meta.env.VITE_API_BASE_URL);
       console.log("yo")
+      console.log(import.meta.env.VITE_API_BASE_URL)
+
       const response = await axios.get(`${BASE_URL}/doctor/findAllDoctors`);
       console.log("yooo")
       console.log("API Response:", response.data);

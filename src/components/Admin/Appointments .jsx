@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Table, Button, Card, Badge, Spinner, Alert, Container, Form } from "react-bootstrap";
 import axios from "axios";
 import AdminNavbar from "./AdminNavbar";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 const Appointments = () => {
   const [appointments, setAppointments] = useState([]);
